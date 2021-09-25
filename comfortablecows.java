@@ -1,3 +1,5 @@
+#inefficient solution to http://usaco.org/index.php?page=viewproblem2&cpid=1108
+
 import java.util.*;
 import java.io.*;
 

@@ -1,0 +1,189 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch AlternatingSubsequence",
+            "request": "launch",
+            "mainClass": "AlternatingSubsequence",
+            "projectName": "usaco_f50d6d33"
+        },
+        {
+            "type": "java",
+            "name": "Launch BerSUBall",
+            "request": "launch",
+            "mainClass": "BerSUBall",
+            "projectName": "usaco_f50d6d33"
+        },
+        {
+            "type": "java",
+            "name": "Launch HackerRank",
+            "request": "launch",
+            "mainClass": "HackerRank",
+            "projectName": "usaco_f50d6d33"
+        },
+        {
+            "type": "java",
+            "name": "Launch plzwork",
+            "request": "launch",
+            "mainClass": "plzwork",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Packages",
+            "request": "launch",
+            "mainClass": "Packages",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch acowdemia",
+            "request": "launch",
+            "mainClass": "acowdemia",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch cbarn",
+            "request": "launch",
+            "mainClass": "cbarn",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch closestcow",
+            "request": "launch",
+            "mainClass": "closestcow",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch comfortablecows",
+            "request": "launch",
+            "mainClass": "comfortablecows",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch convintervals",
+            "request": "launch",
+            "mainClass": "convintervals",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch cowntagion",
+            "request": "launch",
+            "mainClass": "cowntagion",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch cowqueue",
+            "request": "launch",
+            "mainClass": "cowqueue",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch testing",
+            "request": "launch",
+            "mainClass": "creatureInheritanceTree.testing",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch dfs",
+            "request": "launch",
+            "mainClass": "dfs",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch diamond",
+            "request": "launch",
+            "mainClass": "diamond",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch fenceplanning",
+            "request": "launch",
+            "mainClass": "fenceplanning",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch guesstheanimal",
+            "request": "launch",
+            "mainClass": "guesstheanimal",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch herding",
+            "request": "launch",
+            "mainClass": "herding",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch measurement",
+            "request": "launch",
+            "mainClass": "measurement",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch measurement2",
+            "request": "launch",
+            "mainClass": "measurement2",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch shell",
+            "request": "launch",
+            "mainClass": "shell",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch sleepy",
+            "request": "launch",
+            "mainClass": "sleepy",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch square",
+            "request": "launch",
+            "mainClass": "square",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch testing(1)",
+            "request": "launch",
+            "mainClass": "testing",
+            "projectName": "usaco_9c2aa6b6"
+        },
+        {
+            "type": "java",
+            "name": "Launch traffic",
+            "request": "launch",
+            "mainClass": "traffic",
+            "projectName": "usaco_9c2aa6b6"
+        }
+    ]
+}

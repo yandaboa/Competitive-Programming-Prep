@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch nines",
+            "request": "launch",
+            "mainClass": "nines",
+            "projectName": "usaco_f50d6d33"
+        },
+        {
+            "type": "java",
+            "name": "Launch soulmates",
+            "request": "launch",
+            "mainClass": "soulmates",
+            "projectName": "usaco_f50d6d33"
+        },
+        {
+            "type": "java",
+            "name": "Launch CountingRooms",
+            "request": "launch",
+            "mainClass": "CountingRooms",
+            "projectName": "usaco_f50d6d33"
+        },
+        {
+            "type": "java",
             "name": "Launch AlternatingSubsequence",
             "request": "launch",
             "mainClass": "AlternatingSubsequence",

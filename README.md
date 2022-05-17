@@ -1,5 +1,3 @@
 # usaco
-Preparation for competitive coding.
 
-Codeforces problems finished so far:
-Teamscode past problems finished so far: 1
+Collection of problems I've done in preparation for coding competitions. Includes CSES, ACSL, USACO, Hackerrank, Codeforces, etc.

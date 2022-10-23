@@ -1,0 +1,2 @@
+
+                cout << order[i] << endl;

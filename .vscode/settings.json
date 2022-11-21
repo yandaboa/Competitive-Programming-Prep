@@ -2,5 +2,10 @@
     "java.project.sourcePaths": [
         "2022 January",
         ""
-    ]
+    ],
+    "files.associations": {
+        "iosfwd": "cpp",
+        "vector": "cpp",
+        "ostream": "cpp"
+    }
 }

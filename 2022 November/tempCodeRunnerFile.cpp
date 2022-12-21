@@ -1,2 +1,2 @@
 
-            existingSums[prefixSum[i]]++;
+    adjList.rsz(n);

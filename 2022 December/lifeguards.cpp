@@ -1,0 +1,1 @@
+//do same as with staticRangeQuerie, but prefSum will be sum of number of 1s up until that point

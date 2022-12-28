@@ -22,4 +22,24 @@ using pi = pair<int, int>;
 #define f first
 #define s second
 #define mp make_pair
-//cin.tie(0)->sync_with_stdio(0);
+
+vi arr;
+
+int N;
+int main(){
+    cin >> N;
+    arr.rsz(N);
+    for (int i = 0; i < N; i++)
+    {
+        cin >> arr[i];
+    }
+    sort(all(arr));
+    int mid = arr[sz(arr)/2];
+    ll cost = 0;
+    for (int i = 0; i < sz(arr); i++)
+    {
+        cost += abs(arr[i] - mid);
+    }
+    
+    cout << cost;
+}

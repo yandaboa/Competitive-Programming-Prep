@@ -23,3 +23,27 @@ using pi = pair<int, int>;
 #define s second
 #define mp make_pair
 //cin.tie(0)->sync_with_stdio(0);
+
+int N, M;
+
+int main(){
+    cin.tie(0)->sync_with_stdio(0);
+    cin >> N >> M;
+    int index = 0;
+    while(index < M){
+        for (int i = 0; i < N; i++)
+        {
+            for (int j = i + 1; j < N; j++)
+            {
+                cout << i + 1 << " " << j + 1 << endl;
+                index++;
+                if(index >= M){
+                    return 0;
+                }
+            }
+            
+        }
+        
+    }
+
+}

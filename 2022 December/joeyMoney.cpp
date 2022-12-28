@@ -23,3 +23,21 @@ using pi = pair<int, int>;
 #define s second
 #define mp make_pair
 //cin.tie(0)->sync_with_stdio(0);
+
+int T;
+
+int main(){
+    cin.tie(0)->sync_with_stdio(0);
+    cin >> T;
+    for (int i = 0; i < T; i++)
+    {
+        int N; cin >> N; ll product = 1;
+        for (int j = 0; j < N; j++)
+        {
+            ll a; cin >> a; product *= a;
+        }
+        product += N - 1;
+        cout << 2022*product << endl;
+    }
+    
+}

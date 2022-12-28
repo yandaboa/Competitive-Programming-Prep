@@ -1,15 +1,13 @@
+// #include <bits/stdc++.h>
+#include <string>
 #include <iostream>
-#include <vector>
+#include <set>
+#include <queue>
 using namespace std;
 
-void af(int a){
-    a++;
-    cout << a;
-}
+priority_queue<int> pq;
 
-int main(){
-    int num = 6;
-    cout << num;
-    af(num);
-    cout << num;
+int main() {
+    cout << pq.top();
+    
 }

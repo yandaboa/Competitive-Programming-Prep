@@ -22,4 +22,24 @@ using pi = pair<int, int>;
 #define f first
 #define s second
 #define mp make_pair
-//cin.tie(0)->sync_with_stdio(0);
+
+int N;
+multiset<int> arr;
+
+int main(){
+    cin >> N; int a; cin >> a; arr.insert(a);
+    for (int i = 0; i < N - 1; i++)
+    {
+        cin >> a;
+        auto itr = arr.upper_bound(a);
+        if(itr == arr.end()){
+            arr.insert(a);
+        } else {
+            int val = *itr;
+            arr.erase(arr.find(val));
+            arr.insert(a);
+        }
+    }
+    cout << sz(arr);
+    
+}

@@ -29,7 +29,8 @@ using pi = pair<int, int>;
 
 int C, N;
 priority_queue<int> chickens;
-multiset<pair<int, int> > cows;
+priority_queue<pi> cows;
+multiset<int> endTimes;
 
 int main(){
     ifstream input("helpcross.in");
@@ -43,21 +44,20 @@ int main(){
     for (int i = 0; i < N; i++)
     {
         int a, b; input >> a >> b;
-        cows.insert(mp(a, b));
+        cows.push(mp(-1*a, b));
     }
-    auto itr = cows.begin();
-    int total = 0;
-    while(!chickens.empty() && itr != cows.end()){
-        int cTime = -1*chickens.top(); chickens.pop();
-        auto cow = *itr;
-        while(cow.s < cTime){
-            itr++; cow = *itr;
+    int matches = 0;
+    while(!chickens.empty()){
+        int chick = chickens.top()*-1; chickens.pop();
+        while(!cows.empty() && cows.top().f*-1 <= chick){
+            endTimes.insert(cows.top().s);
+            cows.pop();
         }
-        if(cow.f <= cTime && cow.s >= cTime){
-            total++;
-            itr++;
+        auto itr = endTimes.lower_bound(chick);
+        if(itr != endTimes.end()){
+            matches++;
+            endTimes.erase(endTimes.find(*itr));
         }
     }
-    output << total;
-    
+    output << matches;
 }

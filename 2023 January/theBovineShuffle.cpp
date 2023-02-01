@@ -27,37 +27,38 @@ using pi = pair<int, int>;
 //cin.tie(0)->sync_with_stdio(0);
 
 int N;
-vector<int16_t> adjList;
-vb visited, inCycle;
+vector<int> adjList;
+vb visited, inCycle, currVis;
 
-void makeCycle(int a, bool first){
-    if(inCycle[a] && first){
-        return;
-    }
+void makeCycle(int a){
+    cout << "m" << a << " ";
     if(inCycle[a]){
         return;
     } else {
         inCycle[a] = true;
-        makeCycle(adjList[a], false);
+        makeCycle(adjList[a]);
     }
 }
 
 void DFS(int a){
-    if(visited[a]){
-        if(inCycle[a]){
-            return;
-        }
-        makeCycle(a, true);
-    } else {
-        visited[a] = true;
-        DFS(adjList[a]);
+    cout << a << " ";
+    if(currVis[a]){
+        makeCycle(a);
+        cout << endl;
     }
+    if(inCycle[a] || visited[a]){
+        return;
+    }
+    
+    visited[a] = true;
+    currVis[a] = true;
+    DFS(adjList[a]);
 }
 
 int main(){
     ifstream input("shuffle.in");
     ofstream output("shuffle.out");
-    input >> N; visited.rsz(N); adjList.rsz(N); inCycle.rsz(N);
+    input >> N; visited.rsz(N); adjList.rsz(N); inCycle.rsz(N); currVis.rsz(N);
     for (int i = 0; i < N; i++)
     {
         int a; input >> a; a--;
@@ -66,7 +67,9 @@ int main(){
     for (int i = 0; i < N; i++)
     {
         if(!visited[i]){
+            fill(all(currVis), false);
             DFS(i);
+            cout << endl;
         }
     }
     int always = 0;

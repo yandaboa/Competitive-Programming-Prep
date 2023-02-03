@@ -34,38 +34,41 @@ void check(vb use, int num, int next){
     if(num > K){
         return;
     }
-    set<char> inUse;
-    int index = 0;
-    for(auto a = uniques.begin(); a != uniques.end(); a++){
-        if(use[index]){
-            inUse.insert(*a);
-        }
-        index++;
+    if(num >= K || num == sz(use)){
+        vb inUse; inUse.rsz(26);
+            int index = 0;
+            for(auto a = uniques.begin(); a != uniques.end(); a++){
+                if(use[index]){
+                    inUse[*a - 'a'] = true;
+                }
+                index++;
+            }
+            // cout << sz(inUse) << endl;
+            vi intervals;
+            int soFar = 0;
+            for (int i = 0; i < sz(og); i++)
+            {
+                if(og[i] != targ[i] && !inUse[og[i] - 'a']){
+                    intervals.pb(soFar);
+                    soFar = 0;
+                } else {
+                    soFar++;
+                }
+            }
+            if(soFar > 0){
+                intervals.pb(soFar);
+            }
+            ll valid = 0;
+            for (int i = 0; i < sz(intervals); i++)
+            {
+                ll temp = intervals[i];
+                temp *= (intervals[i] + 1);
+                temp/=2;
+                valid += temp;
+            }
+            maxV = max(valid, maxV);
     }
-    // cout << sz(inUse) << endl;
-    vi intervals;
-    int soFar = 0;
-    for (int i = 0; i < sz(og); i++)
-    {
-        if(og[i] != targ[i] && inUse.find(og[i]) == inUse.end()){
-            intervals.pb(soFar);
-            soFar = 0;
-        } else {
-            soFar++;
-        }
-    }
-    if(soFar > 0){
-        intervals.pb(soFar);
-    }
-    ll valid = 0;
-    for (int i = 0; i < sz(intervals); i++)
-    {
-        ll temp = intervals[i];
-        temp *= (intervals[i] + 1);
-        temp/=2;
-        valid += temp;
-    }
-    maxV = max(valid, maxV);
+    
     if(next < sz(use)){
         check(use, num, next + 1);
         use[next] = true;

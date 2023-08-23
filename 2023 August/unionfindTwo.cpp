@@ -38,7 +38,13 @@ int find(int a){
 }
 
 void join(int a, int b){
-    
+    int root1 = find(a);
+    int root2 = find(b);
+    if(rand()%2 == 0){
+        parent[root1] = root2;
+    } else {
+        parent[root2] = root1;
+    }
 }
 
 int main(){
@@ -48,5 +54,19 @@ int main(){
     {
         parent[i] = i;
     }
+    for (int i = 0; i < Q; i++)
+    {
+        int a, b, c; cin >> a >> b >> c;
+        if(a == 1){
+            if(find(b) == find(c)){
+                cout << "1" << endl;
+            } else {
+                cout << "0" << endl;
+            }
+        } else {
+            join(b, c);
+        }
+    }
+    
     
 }
